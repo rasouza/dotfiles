@@ -1,0 +1,21 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = code --wait
+[commit]
+	gpgSign = true
+[push]
+	default = current
+	followTags = true
+[user]
+	name = R. A. Souza
+	email = alves.wm@gmail.com
+	signingkey = A1924D586049F75E
+[tag]
+	forceSignAnnotated = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
