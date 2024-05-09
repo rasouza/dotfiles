@@ -1,0 +1,6 @@
+darwin:
+  links:
+    Brewfile: ~/Brewfile
+
+  installs:
+    cmd: brew bundle install --file=Brewfile

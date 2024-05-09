@@ -1,0 +1,8 @@
+windows:
+  installs: 
+    cmd: scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+    depends:
+      - scoop
+  # links:
+    # templates: $env:POSH_THEMES_PATH #NOT WORKING
+
