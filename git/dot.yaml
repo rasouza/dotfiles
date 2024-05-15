@@ -1,3 +1,8 @@
-links:
-  .gitconfig: ~/.gitconfig
-  .gitignore_global: ~/.gitignore_global
+linux|darwin:
+  links:
+    .gitconfig: ~/.gitconfig
+    .gitignore_global: ~/.gitignore_global
+windows:
+  links:
+    .gitconfig_windows: ~/.gitconfig
+    .gitignore_global: ~/.gitignore_global

@@ -1,0 +1,29 @@
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+	excludesfile = ~/.gitignore_global
+	# editor = code --wait
+[push]
+	default = current
+	followTags = true
+[user]
+	name = R. A. Souza
+	email = alves.wm@gmail.com
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2ZUkfXmqZV7f9JHMWKDgk08+2cT9ui1mW9Kmu8CfhPz1enIs15eGc02WoBSWvf2hsMKQhT6/UUQeuRWbwdQJAYdRh9+JBu8jh5W+5TXIYTNCsp6vGB3b+x1cJ7hV4di4i5g5HK/1+R84G2mSLYiMISpOy7OCYYOn3aF/ivrLQkLgLXlibTmhKqrjhdhqjVmOdjqcIq71ky5woiXNPPMvjwegf3z7ION2TF0p4uw2x89GuZAYW5fRqQDP5u5SHVCqW4Y+3WektA836pA5WXIVdLUHe/Fn1exg9rLLZUD85LpNR6bvtv7HR27nUVDx098GMnB6/llFHxmxEBKZSMkrkpabVtRNG38u8JWZm+4V6R1swNcNcddoo1RMX3JDgSMzwpJtNRNjEzVCzWR4bXBgDtrLYYVbS/vd/nMWD7aJ7EwgLjXu6S9OmrcFkqIv9pxU+IHGL9/bFeNqLeWnPseT03y1e/w1E3M/OPnk4Z3p1+HO8OwTIW8DvMRTnw5XLmhD0igzQF6ilhYgE/LPCYVhPz9sVVldrx/P1Hi0RRGeAo2S7e3kJNhrMuSONJe05VSJBxmGFUR8nS515ps+BbzoDAVwsktaQ/5pMD842MT2cJnlJUN9iCWn24Qyp+gInnEKcm32ixuI0roxfv19ayRL5fxhQkksj7qS8ayz9bJ59Nw==
+[tag]
+	forceSignAnnotated = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "C:/Users/Rodrigo/AppData/Local/1Password/app/8/op-ssh-sign.exe"
+
+[commit]
+  gpgsign = true
